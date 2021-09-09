@@ -1,0 +1,112 @@
+.home-page {
+  .landing-section {
+    background-color: #e1e1e1;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 60%, transparent), url("../../assets/images/image-one.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: bottom;
+    // background-attachment: fixed;
+    will-change: transform;
+    min-height: 75vh;
+
+    .content {
+      padding-top: 100px;
+
+      h1 {
+        font-weight: 600;
+        font-family: 'Roboto', sans-serif!important;
+        color: #f1f1f1;
+        letter-spacing: 2px;
+        font-size: 3.2rem;
+        margin-bottom: 20px;
+        line-height: 60px;
+
+        span {
+          color: #39C16C;
+        }
+      }
+
+      p {
+        color: #f1f1f1;
+        font-weight: 600;
+        padding: 10px 0;
+        backdrop-filter:blur(3px);
+
+        span {
+          color: #39C16C;
+        }
+      }
+
+      .btn-cta {
+        background-color: #39C16C;
+        color: #fff;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        border-radius: 2px;
+        padding: 12px 30px;
+        transition: all 0.1s ease;
+
+        &:hover {
+          background-color: #4BB171;
+        }
+      }
+    }
+  }
+
+  .products-section {
+    padding: 50px 0;
+    height: 600px;
+    background-image: linear-gradient(to bottom, #fff 50% , #39C16C 50%);
+
+    h2 {
+      font-weight: 600;
+      color: #39C16C;
+      margin-bottom: 50px;
+
+      span {
+        border-bottom: 3px solid #39C16C;
+        border-radius: 3px;
+      }
+    }
+
+    .card {
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 7px 7px 0 0 rgba(0,0,0,0.09);
+
+      &:hover {
+        .btn-view span {
+          margin-left: 5px;
+        }
+      }
+
+      h4 {
+        color: #5f6063;
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #5f6063;
+        font-size: 0.9rem;
+      }
+
+      .btn-view {
+        color: #39C16C;
+        // font-size: 0.9rem;
+        padding-left: 0;
+        text-align: left;
+
+        span {
+          transition: all 0.2s;
+        }
+      }
+    }
+  }
+}

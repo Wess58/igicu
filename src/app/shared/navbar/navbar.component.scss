@@ -1,0 +1,30 @@
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.09);
+  padding-right: 100px;
+
+  .navbar-brand {
+    height: 60px;
+  }
+
+  .nav-item {
+    margin: 0 10px;
+  }
+
+  .nav-link {
+    color: #39C16C;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-family: 'Roboto', sans-serif!important;
+    border-radius: 3px;
+    font-size: 1.2rem;
+
+    &:hover {
+      border-bottom: 3px solid #39C16C33;
+    }
+  }
+}
+
+.active-link {
+  border-bottom: 3px solid #39C16C!important;
+}
