@@ -25,7 +25,7 @@
         line-height: 60px;
 
         span {
-          color: #39C16C;
+          color: #62A851;
         }
       }
 
@@ -36,12 +36,12 @@
         backdrop-filter:blur(3px);
 
         span {
-          color: #39C16C;
+          color: #62A851;
         }
       }
 
       .btn-cta {
-        background-color: #39C16C;
+        background-color: #62A851;
         color: #fff;
         letter-spacing: 1px;
         font-weight: 600;
@@ -51,7 +51,7 @@
         transition: all 0.1s ease;
 
         &:hover {
-          background-color: #4BB171;
+          background-color: #569347;
         }
       }
     }
@@ -60,15 +60,15 @@
   .products-section {
     padding: 50px 0;
     height: 600px;
-    background-image: linear-gradient(to bottom, #fff 50% , #39C16C 50%);
+    background-image: linear-gradient(to bottom, #FCFCFC 50% , #62A851 50%);
 
     h2 {
       font-weight: 600;
-      color: #39C16C;
+      color: #62A851;
       margin-bottom: 50px;
 
       span {
-        border-bottom: 3px solid #39C16C;
+        border-bottom: 3px solid #62A851;
         border-radius: 3px;
       }
     }
@@ -78,6 +78,7 @@
       padding: 20px;
       margin-bottom: 20px;
       box-shadow: 7px 7px 0 0 rgba(0,0,0,0.09);
+      background-color: #FCFCFC;
 
       &:hover {
         .btn-view span {
@@ -98,7 +99,7 @@
       }
 
       .btn-view {
-        color: #39C16C;
+        color: #62A851;
         // font-size: 0.9rem;
         padding-left: 0;
         text-align: left;
@@ -109,4 +110,213 @@
       }
     }
   }
+
+  .companies-section {
+    padding: 70px 20px;
+    background-image: linear-gradient(to bottom , #fff8 20% , transparent), url("../../assets/images/testimonial-bg.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: bottom;
+    // background-attachment: fixed;
+    will-change: transform;
+    border-bottom: 1px solid #f1f1f1;
+
+    h5{
+      font-weight: 600;
+      color: #5f6063;
+      margin-bottom: 50px;
+
+      span {
+        color: #62A851;
+      }
+    }
+
+    .cta-image{
+      height: 100px;
+      margin: 0px 30px;
+      object-fit: contain;
+    }
+  }
+
+  .call-to-action-section {
+    background-image: linear-gradient(to bottom , #fff8 20% , transparent), url("../../assets/images/testimonial-bg.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: bottom;
+    // background-attachment: fixed;
+    will-change: transform;
+
+    .content {
+      padding: 70px 0;
+    }
+
+    h2 {
+      color: #5f6063;
+      font-weight: 600;
+      margin-bottom: 50px;
+
+      span {
+        color: #62A851;
+      }
+    }
+
+    .card {
+      border: none;
+      width: 94%;
+      height: 250px;
+      box-shadow: 7px 7px 0 0 rgba(0,0,0,0.09);
+
+    }
+
+    .green-bg {
+      background-color: #62A851;
+
+      .pie-wrapper .label,
+      .pie-wrapper .label .smaller {
+        color: #fff;
+      }
+
+      p {
+        text-align: center;
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+
+    .black-bg {
+      background-color: #3c4043;
+      margin-top: 50px;
+
+      .pie-wrapper .label,
+      .pie-wrapper .label .smaller {
+        color: #62A851;
+      }
+
+      p {
+        text-align: center;
+        color: #62A851;
+        font-weight: 600;
+      }
+    }
+
+    .btn-cta {
+      background-color: #62A851;
+      color: #fff;
+      letter-spacing: 1px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-radius: 2px;
+      padding: 12px 30px;
+      transition: all 0.1s ease;
+      margin-top: 30px;
+
+
+      &:hover {
+        background-color: #569347;
+      }
+    }
+
+    .cta-image {
+      height: 350px;
+      margin-top: 150px;
+      filter: drop-shadow(0px 3px 40px #62A85144);
+    }
+  }
+}
+
+.set-size {
+  font-size: 8em;
+}
+
+.pie-wrapper {
+  height: 1em;
+  width: 1em;
+  margin: 40px auto 30px;
+  position: relative;
+}
+
+.pie-wrapper .pie .half-circle {
+  height: 100%;
+  width: 100%;
+  border: 0.04em solid;
+  border-radius: 50%;
+  clip: rect(0, 0.5em, 1em, 0);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.pie-wrapper .label {
+  background: #34495e;
+  border-radius: 50%;
+  bottom: 0.4em;
+  cursor: default;
+  display: block;
+  font-size: 0.25em;
+  left: 0.4em;
+  line-height: 2.8em;
+  position: absolute;
+  right: 0.4em;
+  text-align: center;
+  top: 0.4em;
+}
+
+.pie-wrapper .label .smaller {
+  font-size: 0.45em;
+  padding-bottom: 20px;
+  vertical-align: super;
+}
+
+.pie-wrapper .shadow {
+  height: 100%;
+  width: 100%;
+  border: 0.05em solid #bdc3c7;
+  border-radius: 50%;
+}
+
+.pie-wrapper.style-2 .label {
+  background: none;
+  color: #7f8c8d;
+}
+
+.pie-wrapper.style-2 .label .smaller {
+  // color: #bdc3c7;
+}
+
+.pie-wrapper.progress-95 .pie {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.pie-wrapper.progress-95 .pie .half-circle {
+  border-color: #fff;
+}
+
+.pie-wrapper.progress-95 .pie .left-side {
+  transform: rotate(340deg);
+}
+
+.pie-wrapper.progress-95 .pie .right-side {
+  transform: rotate(180deg);
+}
+
+.pie-wrapper.progress-65 .pie {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.pie-wrapper.progress-65 .pie .half-circle {
+  border-color: #62A851;
+}
+
+.pie-wrapper.progress-65 .pie .left-side {
+  transform: rotate(240deg);
+}
+
+.pie-wrapper.progress-65 .pie .right-side {
+  transform: rotate(180deg);
 }
