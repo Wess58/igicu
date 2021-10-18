@@ -1,4 +1,4 @@
-<div class="container-fluid home-page">
+<div class="container-fluid home-page" [@fadeIn]>
 
   <!-- LANDING SECTION -->
   <div class="landing-section">
@@ -36,7 +36,7 @@
 
       <div class="row">
         <!-- <div class="col-md-3"> -->
-        <img class="cta-image" src="assets/images/shell.svg" alt="logo">
+        <!-- <img class="cta-image" src="assets/images/shell.svg" alt="logo"> -->
         <!-- </div> -->
         <!-- <div class="col-md-3"> -->
         <img class="cta-image" src="assets/images/total.png" alt="logo">
@@ -45,7 +45,7 @@
         <img class="cta-image" src="assets/images/coca-cola-logo.png" alt="logo">
         <!-- </div> -->
         <!-- <div class="col-md-3"> -->
-        <img class="cta-image py-2" src="assets/images/equity-bank-logo.png" alt="logo">
+        <!-- <img class="cta-image py-2" src="assets/images/equity-bank-logo.png" alt="logo"> -->
         <!-- </div> -->
       </div>
     </div>
@@ -64,7 +64,7 @@
               tailored to your requirements to boost your project from communication planning to media materials.
             </p>
 
-            <button class="btn btn-view">learn more <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
+            <button class="btn btn-view" [routerLink]="['/services']" [queryParams]="{ service: '01' }">learn more <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
             <!-- <ul>
               <li>Strategic communications planning</li>
               <li>Key messages development</li>
@@ -81,7 +81,7 @@
             <p>Understanding the creative process in film making from concept development
               to storyboarding can be mentally-draining, we will help you build an idea to a strong visualization.</p>
 
-            <button class="btn btn-view">learn more <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
+            <button class="btn btn-view" [routerLink]="['/services']" [queryParams]="{ service: '02' }">learn more <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
 
             <!-- <ul>
               <li>Concept Development</li>
@@ -101,7 +101,7 @@
             <p>Branding and visual identity are all around us,
               we will guiding you to build a visual identity that can help you make more thoughtful design decisions in your business.</p>
 
-            <button class="btn btn-view">learn more <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
+            <button class="btn btn-view" [routerLink]="['/services']" [queryParams]="{ service: '03' }">learn more <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
 
             <!-- <ul>
               <li>Logo and Branding materials</li>
@@ -116,7 +116,7 @@
             <h4>Language translations</h4>
             <p>We offer proffessional translators that are richly invested in a vast array of linguistics, to make it easier to interpret and render texts / speech accurately and quickly and spot errors</p>
 
-            <button class="btn btn-view">learn more <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
+            <button class="btn btn-view" [routerLink]="['/services']" [queryParams]="{ service: '04' }">learn more <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
 
             <!-- <ul>
               <li>French</li>

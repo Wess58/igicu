@@ -1,0 +1,133 @@
+.contact-page {
+  .landing-section {
+    padding-top: 15vh;
+    background-image: linear-gradient(to bottom , #fff8 20% , transparent), url("../../assets/images/testimonial-bg.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: bottom;
+    // background-attachment: fixed;
+    will-change: transform;
+
+    h1 {
+      font-weight: 600;
+      font-family: 'Roboto', sans-serif!important;
+      color: #62A851;
+      letter-spacing: 2px;
+      font-size: 3.2rem;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      line-height: 60px;
+    }
+
+    p {
+      color: #5f6063;
+      font-weight: 600;
+      margin-bottom: 20px;
+
+      span {
+        color: #62A851;
+      }
+    }
+
+    .btn-cta {
+      background-color: #62A851;
+      color: #fff;
+      letter-spacing: 1px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-radius: 2px;
+      padding: 12px 30px;
+      transition: all 0.1s ease;
+      margin-bottom: 30px;
+
+      &:hover {
+        background-color: #569347;
+      }
+    }
+
+    .cta-image {
+      width: auto;
+      height: 400px;
+      margin-top: 0!important;
+      margin-top: 150px;
+      filter: drop-shadow(0px 3px 40px #62A85144);
+    }
+  }
+
+  .content {
+    background-color: #62A851;
+    padding-top: 20px;
+
+    h3 {
+      color: #3c4043;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    form {
+      padding: 0;
+      margin-bottom: 20px;
+
+      label {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #FCFCFC;
+      }
+
+      input,
+      textarea {
+        border: 2px solid #3c4043;
+        border-radius: 8px;
+        padding: 25px 12px!important !important;
+        background-color: #FCFCFC;
+      }
+
+      .btn-send {
+        width: 100%;
+        background-color: #3c4043;
+        color: #FCFCFC;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        padding: 14px!important !important;
+      }
+    }
+
+    h5 {
+      font-weight: 600;
+      color: #3c4043;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #FCFCFC;
+      font-weight: 600;
+    }
+  }
+}
+@media (max-width: 3000px) {}
+@media (max-width: 2000px) {}
+@media (max-width: 1700px) {}
+@media (max-width: 1500px) {}
+@media (max-width: 1370px) {}
+@media (max-width: 770px) {
+  .landing-section {
+    p {
+      margin-bottom: 70px!important;
+    }
+
+    .cta-image {
+      display: none;
+    }
+  }
+
+  .content {
+    background-color: #62A851;
+    padding: 40px 10px!important;
+  }
+}

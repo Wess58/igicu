@@ -1,0 +1,104 @@
+.products-page {
+  .landing-section {
+    padding-top: 15vh;
+    background-image: linear-gradient(to bottom , #fff8 20% , transparent), url("../../assets/images/testimonial-bg.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: bottom;
+    // background-attachment: fixed;
+    will-change: transform;
+
+    h1 {
+      font-weight: 600;
+      font-family: 'Roboto', sans-serif!important;
+      color: #62A851;
+      letter-spacing: 2px;
+      font-size: 3.2rem;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      line-height: 60px;
+    }
+
+    p {
+      color: #5f6063;
+      font-weight: 600;
+      margin-bottom: 20px;
+      span {
+        color: #62A851;
+      }
+    }
+
+    .btn-cta {
+      background-color: #62A851;
+      color: #fff;
+      letter-spacing: 1px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-radius: 2px;
+      padding: 12px 30px;
+      transition: all 0.1s ease;
+      margin-bottom: 30px;
+
+      &:hover {
+        background-color: #569347;
+      }
+    }
+
+    .cta-image {
+      width: 100%;
+      height: auto;
+      margin-top: 0!important;
+      margin-top: 150px;
+      filter: drop-shadow(0px 3px 40px #62A85144);
+    }
+  }
+
+  .content {
+    background-color: #f1f1f1;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-top: 5px solid #62A851;
+    // margin-bottom: 30px;
+
+
+    h3 {
+      color: #5f6063;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 7px 7px 0 0 rgba(0,0,0,0.09);
+      background-color: #FCFCFC;
+
+      &:hover {
+        .btn-view span {
+          margin-left: 5px;
+        }
+      }
+
+      h4 {
+        color: #5f6063;
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+        min-height: 42px;
+
+        span {
+          font-size: 0.9rem;
+        }
+      }
+
+      p {
+        color: #5f6063;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

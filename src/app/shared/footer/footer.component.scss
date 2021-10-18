@@ -1,6 +1,6 @@
 .footer {
   background-color: #3c4043;
-  padding: 40px 0;
+  padding: 40px 0 20px 0;
 
   .logo {
     width: 80%;
@@ -52,6 +52,17 @@
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+
+  .copyright{
+    border-top: 2px solid #FCFCFC;
+    margin-top: 20px;
+
+    p{
+      color: #FCFCFC;
+      margin-top: 20px;
+      margin-bottom: 0;
     }
   }
 }

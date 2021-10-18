@@ -23,10 +23,10 @@
 
             <h5>Services</h5>
             <ul>
-              <li>Communications consultancy</li>
-              <li>Media production and Motion graphics</li>
-              <li>Graphic design and Branding</li>
-              <li>Language translations</li>
+              <li [routerLink]="['/services']" [queryParams]="{ service: '01' }">Communications consultancy</li>
+              <li [routerLink]="['/services']" [queryParams]="{ service: '02' }">Media production and Motion graphics</li>
+              <li [routerLink]="['/services']" [queryParams]="{ service: '03' }">Graphic design and Branding</li>
+              <li [routerLink]="['/services']" [queryParams]="{ service: '04' }">Language translations</li>
             </ul>
 
 
@@ -53,6 +53,10 @@
         </div>
       </div>
 
+    </div>
+
+    <div class="copyright text-center">
+      <p>&copy; {{year}} | Igicu Africa Consultancy Limited | All right reserved</p>
     </div>
 
   </div>
