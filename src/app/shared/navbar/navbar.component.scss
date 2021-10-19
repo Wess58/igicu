@@ -1,10 +1,13 @@
 .navbar {
-  background-color: #fff;
+  background-color: #62A851;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.09);
   padding-right: 100px;
+  height: 75px;
+  overflow: hidden;
 
   .navbar-brand {
-    height: 56px;
+    height: 110px;
+    cursor: pointer;
   }
 
   .nav-item {
@@ -12,24 +15,24 @@
   }
 
   .nav-link {
-    color: #62A851;
+    color: #fff;
     font-weight: 600;
     letter-spacing: 1.5px;
     // font-family: 'Roboto', sans-serif!important;
     border-radius: 3px;
     font-size: 1rem;
     padding-bottom: 3px;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #62A851;
 
 
     &:hover {
-      border-bottom: 3px solid #62A85133;
+      border-bottom: 3px solid #fff5;
     }
   }
 }
 
 .active-link {
-  border-bottom: 3px solid #62A851!important;
+  border-bottom: 3px solid #fff!important;
 }
 
 @media (max-width: 770px) {
@@ -38,7 +41,9 @@
     padding-left: 10px;
   }
   .navbar-brand {
-    width: 200px;
-    height: auto;
+    // width: 200px;
+    // height: auto;
+    position: relative;
+    top: -20px;
   }
 }

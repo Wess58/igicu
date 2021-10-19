@@ -1,7 +1,14 @@
 .home-page {
-  .landing-section {
+  padding-top: 20px;
+
+  carousel {
+    z-index: 0;
+  }
+
+  .consultancy-section,
+  .media-section,
+  .translations-section {
     background-color: #e1e1e1;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 60%, transparent), url("../../assets/images/image-one.jpg");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -56,6 +63,19 @@
         }
       }
     }
+  }
+
+  .consultancy-section {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 60%, transparent), url("../../assets/images/image-one.jpg");
+  }
+
+  .media-section {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 60%, transparent), url("../../assets/images/media.jpg");
+  }
+
+  .translations-section {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 60%, transparent), url("../../assets/images/translations.jpg");
+    background-position:center!important;
   }
 
   .products-section {
@@ -114,16 +134,18 @@
 
   .companies-section {
     padding: 70px 20px;
-    background-image: linear-gradient(to bottom , #fff8 20% , transparent), url("../../assets/images/testimonial-bg.png");
+    // background-image: linear-gradient(to bottom , #fff8 20% , transparent), url("../../assets/images/testimonial-bg.png");
+    background-image: linear-gradient(to bottom , #fff8 20% , transparent), url("../../assets/images/skyscrapper.jpg");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     // background-attachment: fixed;
     will-change: transform;
     border-bottom: 1px solid #f1f1f1;
+    min-height: 400px;
 
     h5 {
       font-weight: 600;

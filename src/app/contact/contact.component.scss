@@ -1,20 +1,21 @@
 .contact-page {
   .landing-section {
     padding-top: 15vh;
-    background-image: linear-gradient(to bottom , #fff8 20% , transparent), url("../../assets/images/testimonial-bg.png");
+    background-image: linear-gradient(to bottom , rgba(0,0,0,0.65) 60% , transparent), url("../../assets/images/image-three.jpg");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     // background-attachment: fixed;
     will-change: transform;
+    height: 450px;
 
     h1 {
       font-weight: 600;
       font-family: 'Roboto', sans-serif!important;
-      color: #62A851;
+      color: #f1f1f1;
       letter-spacing: 2px;
       font-size: 3.2rem;
       margin-top: 30px;
@@ -23,12 +24,13 @@
     }
 
     p {
-      color: #5f6063;
+      color: #f1f1f1;
       font-weight: 600;
+      backdrop-filter:blur(3px);
       margin-bottom: 20px;
 
       span {
-        color: #62A851;
+        // color: #62A851;
       }
     }
 
@@ -128,6 +130,6 @@
 
   .content {
     background-color: #62A851;
-    padding: 40px 10px!important;
+    padding: 40px 10px!important !important;
   }
 }

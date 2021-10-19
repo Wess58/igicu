@@ -1,27 +1,78 @@
 <div class="container-fluid home-page" [@fadeIn]>
 
-  <!-- LANDING SECTION -->
-  <div class="landing-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7">
-          <div class="content">
-            <h1>Creatively transforming <br>
-              businesses to <span>Compete</span> <br>
-              for tomorrow
-            </h1>
 
-            <p>Experience a consultancy that prepares your business for <br>
-              <span>Uncommon growth</span> even in the face of disruption by solving <br> problems through
-              better communications.
-            </p>
-            <button class="btn btn-cta">Get in Touch <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
+  <carousel [height]="600" [cellWidth]="'100%'" [autoplay]="true" [loop]="false" [autoplayInterval]="5000" [arrowsTheme]="'dark'">
+    <div class="carousel-cell">
+      <div class="consultancy-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="content">
+                <h1>Creatively transforming <br>
+                  businesses to <span>Compete</span> <br>
+                  for tomorrow
+                </h1>
+
+                <p>Experience a consultancy that prepares your business for <br>
+                  <span>Uncommon growth</span> even in the face of disruption by solving <br> problems through
+                  better communications.
+                </p>
+                <button class="btn btn-cta" [routerLink]="['/contact-us']">Get in Touch <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
+              </div>
+            </div>
+            <div class="col-md-5"></div>
           </div>
         </div>
-        <div class="col-md-5"></div>
       </div>
     </div>
-  </div>
+    <div class="carousel-cell">
+      <div class="media-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="content">
+
+                <h1>Building ideas into <br class="d-none d-sm-block d-md-block">
+                   <span>strong</span> and <span>impactful</span> visualizations </h1>
+
+                <p>Experience a consultancy that prepares your business for <br>
+                  <span>Uncommon growth</span> even in the face of disruption by solving <br> problems through
+                  better communications.
+                </p>
+                <button class="btn btn-cta" [routerLink]="['/contact-us']">Get in Touch <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
+              </div>
+            </div>
+            <div class="col-md-5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="translations-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="content">
+                <h1>Let the World <span>hear</span> your words and thoughts
+                </h1>
+
+                <p>Experience a consultancy that prepares your business for <br>
+                  <span>Uncommon growth</span> even in the face of disruption by solving <br> problems through
+                  better communications.
+                </p>
+                <button class="btn btn-cta" [routerLink]="['/contact-us']">Get in Touch <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
+              </div>
+            </div>
+            <div class="col-md-5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </carousel>
+
+  <!-- LANDING SECTION -->
+
 
   <div class="companies-section ">
     <div class="container">
