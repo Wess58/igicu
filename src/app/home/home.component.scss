@@ -17,18 +17,19 @@
     background-position: bottom;
     // background-attachment: fixed;
     will-change: transform;
-    min-height: 75vh;
+    height: 100%;
+
 
     .content {
-      padding-top: 100px;
+      padding-top: 70px;
 
       h1 {
         font-weight: 600;
         font-family: 'Roboto', sans-serif!important;
         color: #f1f1f1;
         letter-spacing: 2px;
-        font-size: 3.2rem;
-        margin-bottom: 20px;
+        font-size: 2.8rem;
+        margin-bottom: 40px;
         line-height: 60px;
 
         span {
@@ -66,15 +67,15 @@
   }
 
   .consultancy-section {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 60%, transparent), url("../../assets/images/image-one.jpg");
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 50%, transparent), url("../../assets/images/image-one.jpg");
   }
 
   .media-section {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 60%, transparent), url("../../assets/images/media.jpg");
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 50%, transparent), url("../../assets/images/media.jpeg");
   }
 
   .translations-section {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 60%, transparent), url("../../assets/images/translations.jpg");
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 50%, transparent), url("../../assets/images/black-woman.jpeg");
     background-position:center!important;
   }
 
@@ -348,6 +349,19 @@
 @media (max-width: 1370px) {}
 @media (max-width: 770px) {
   .landing-section {
+
+    .consultancy-section {
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 100%, transparent), url("../../assets/images/image-one.jpg")!important;
+    }
+
+    .media-section {
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 100%, transparent), url("../../assets/images/media.jpg")!important;
+    }
+
+    .translations-section {
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 100%, transparent), url("../../assets/images/translations.jpg")!important;
+      background-position:center!important;
+    }
     .content {
       padding-top: 60px!important;
       padding-bottom: 30px;

@@ -18,9 +18,25 @@ import { style, animate, transition, trigger } from '@angular/animations';
   ],
 })
 export class ProductsComponent implements OnInit {
-
-
+  currentBackground: any;
+  currentImageIndex = 1;
+  activateFade = false;
   route: any;
+  carouselImages = [
+    {
+      imgUrl: "assets/images/image-two.jpg"
+    },
+    {
+      imgUrl: "assets/images/event-bg.jpg"
+    },
+    {
+      imgUrl: "assets/images/image-three.jpg"
+    },
+    {
+      imgUrl: "assets/images/image-one.jpg"
+    }
+  ]
+
   constructor(
     private activatedRoute: ActivatedRoute
   ) { }
@@ -29,15 +45,32 @@ export class ProductsComponent implements OnInit {
     window.scroll(0, 0);
 
     // console.log(this.activatedRoute.snapshot.queryParams);
-    this.activatedRoute.queryParams.subscribe(params => {
-      // console.log(params);
-      this.route = params.service;
-    });
+    // this.activatedRoute.queryParams.subscribe(params => {
+    //   // console.log(params);
+    //   this.route = params.service;
+    // });
+    //
+    // setTimeout(() => {
+    //   this.scrollToContent();
+    // }, 300);
+    this.activateFade = true;
 
+    this.currentBackground = this.carouselImages[0];
+    window.setInterval(this.setBackground.bind(this), 5000);
+
+
+
+  }
+
+  setBackground(): any {
+
+    this.currentImageIndex++;
+    this.currentImageIndex = this.currentImageIndex % this.carouselImages?.length;
+
+    this.currentBackground = null;
     setTimeout(() => {
-      this.scrollToContent();
-    }, 300);
-
+      this.currentBackground = this.carouselImages[this.currentImageIndex];
+    }, 10);
 
   }
 

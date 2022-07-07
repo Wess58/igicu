@@ -11,6 +11,7 @@ import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ApproachComponent } from './approach/approach.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     ProductsComponent,
     ContactComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ApproachComponent
   ],
   imports: [
     BrowserModule,

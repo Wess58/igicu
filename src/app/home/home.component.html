@@ -1,7 +1,7 @@
 <div class="container-fluid home-page" [@fadeIn]>
 
 
-  <carousel [height]="600" [cellWidth]="'100%'" [autoplay]="true" [loop]="false" [autoplayInterval]="5000" [arrowsTheme]="'dark'">
+  <carousel [height]="500" [cellWidth]="'100%'"  [loop]="true" [arrowsTheme]="'dark'" class="landing-section">
     <div class="carousel-cell">
       <div class="consultancy-section">
         <div class="container">
@@ -9,16 +9,11 @@
             <div class="col-md-7">
               <div class="content">
                 <h1>
-                  Creatively cutting through <br>
-                  the <span>noise</span> to get <br>
-                  your message across
-
+                  Transforming ideas into <br>
+                  <span>strong</span> and <span>impactful</span> <br>
+                  visualizations
                 </h1>
 
-                <p>Experience a consultancy that prepares your business for <br>
-                  <span>Uncommon growth</span> even in the face of disruption by solving <br> problems through
-                  better communications.
-                </p>
                 <button class="btn btn-cta" [routerLink]="['/contact-us']">Get in Touch <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
               </div>
             </div>
@@ -34,8 +29,11 @@
             <div class="col-md-7">
               <div class="content">
 
-                <h1>Building ideas into <br class="d-none d-sm-block d-md-block">
-                  <span>strong</span> and <span>impactful</span> visualizations
+
+                <h1>
+                  Creatively cutting through <br>
+                  the <span>noise</span> to get <br>
+                  your message across.
                 </h1>
 
                 <button class="btn btn-cta" [routerLink]="['/contact-us']">Get in Touch <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
@@ -52,8 +50,7 @@
           <div class="row">
             <div class="col-md-7">
               <div class="content">
-                <h1>Realising the <span>exposure</span> that your brand deserves
-                </h1>
+                <h1>We help you leverage your <br> story, to craft a <span> strong</span> and <span>relatable</span> brand.</h1>
 
                 <button class="btn btn-cta" [routerLink]="['/contact-us']">Get in Touch <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
               </div>
@@ -75,7 +72,7 @@
       <div class="col-md-8">
         <h5>Igicu Africa Consultancy Limited has over <span>30 years</span> of experience in
           Corporate Communications, Sales and Marketing , under the leadership of the
-          founder, <span>Liliane Binagwaho</span>.
+          founder, <span routerLink="">Liliane Binagwaho</span>.
         </h5>
       </div>
 
@@ -102,14 +99,7 @@
             </p>
 
             <button class="btn btn-view" [routerLink]="['/services']" [queryParams]="{ service: '01' }">learn more <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
-            <!-- <ul>
-              <li>Strategic communications planning</li>
-              <li>Key messages development</li>
-              <li>Project management</li>
-              <li>Copywriting services</li>
-              <li>Development of Media materials</li>
-              <li>Content strategy development</li>
-            </ul> -->
+
           </div>
         </div>
 
@@ -121,12 +111,7 @@
 
             <button class="btn btn-view" [routerLink]="['/services']" [queryParams]="{ service: '03' }">learn more <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
 
-            <!-- <ul>
-              <li>Logo and Branding materials</li>
-              <li>Infographics and icons</li>
-              <li>Documents and annual Reports</li>
-              <li>Animations</li>
-            </ul> -->
+
           </div>
         </div>
         <div class="col-md-4">

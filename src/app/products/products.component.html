@@ -1,91 +1,164 @@
 <div class="container-fluid products-page" [@fadeIn]>
 
   <div class="landing-section">
+
+    <div class="bg-img">
+      <img [src]="currentBackground?.imgUrl" alt="bg-img" *ngIf="currentBackground" [@fadeIn]>
+    </div>
+
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-7">
           <h1>Our Services </h1>
-          <p>Get an amazing communications' consultancy experience <br>
-            with our <span>Proficient team</span>
+
+          <p>Experience a consultancy that prepares your business for <br>
+            <span>Uncommon growth</span> even in the face of disruption by solving <br> problems through
+            better communications.
           </p>
 
-          <button class="btn btn-cta" [routerLink]="['/contact-us']">Get in Touch <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="introductory-section">
+    <div class="container">
+      <p>Your job as an entrepreneur isn't to ensure your employees are doing their jobs. Your goal should be to provide a sustainable process that ensures that they succeed, even if you aren't present.</p>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <span>Is your business dependent on a few superstar employees instead of clear processes?</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <span>Do your employees make decisions by default rather than on purpose?</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <span> How satisfied are your customers?
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <p class="mb-0">Our goal is to help you develop winning processes, a brand that speaks for itself, and a culture of customer service that is effective for your business.</p>
+
+    </div>
+  </div>
+
+
+  <div class="content">
+    <div class="container">
+
+      <h3 class="section-heading">Communications and Brand Consultancy</h3>
+      <p class="description">Businesses often underestimate the power of a consistent narrative: strategic communication and marketing solutions tailored to customers' requirements.</p>
+      <p class="description">In <strong class="greenText">Brand Strategy</strong>, we guide your business step by step into building a strong brand identity.</p>
+
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/strory-discovery.svg" alt="illustration">
+
+            <h4> Story discovery</h4>
+            <p>Deep dive into your Business mission, vision and story and bring clarity to your brand's voice and journey.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/core-message.svg" alt="illustration">
+
+            <h4> Defining core message</h4>
+            <p>Identify and outline how your story resonates with your target market.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/images/tailor-make-bio.svg" alt="illustration">
+
+            <h4> Tailoring brand biography</h4>
+            <p>Craft a biography for multiple mediums that fosters empathy and connection with clients and leads.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="content side-by-side">
+    <div class="container">
+
+
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h3 class="section-heading">Customer Service Training</h3>
+
+          <p>Gain an understanding of your customers' industry segment and train your staff on customer satisfaction and recognition.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="illustration-holder">
+            <img src="assets/images/customer-service-training.svg" alt="illustration">
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="content side-by-side">
+    <div class="container">
+
+
+      <div class="row align-items-center">
+
+        <div class="col-md-6">
+          <div class="illustration-holder">
+            <img src="assets/images/event.svg" alt="illustration">
+
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3 class="section-heading">Event Planning and Management</h3>
+          <p>with a clear brief on the output required, there should be brand recognition whilst working within franchises for prosperity.
+          </p>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="content side-by-side">
+    <div class="container">
+
+
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h3 class="section-heading">French & English Translations and Tutoring
+          </h3>
+          <p>Avail education through webinars, learning packages as well as translations.
+          </p>
 
         </div>
         <div class="col-md-6">
-          <!-- <img class="cta-image" src="assets/images/services.svg" alt="logo"> -->
+          <div class="illustration-holder">
+            <img src="assets/images/core-message.svg" alt="illustration">
 
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="content" id="product1">
-    <div class="container">
-
-      <h3 class="section-heading">Communications Consulting</h3>
-
-      <div class="row">
-
-        <div class="col-md-3">
-          <div class="card">
-            <h4>Strategic communications planning</h4>
-            <p>Get advice on strategic communications and marketing solutions
-              tailored to your requirements to boost your project from communication planning to media materials.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card">
-            <h4>Key messages development</h4>
-            <p>Get advice on key messaging that brings your brand to life through words that can be delivered consistently by everyone, anytime, anyplace.</p>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card">
-            <h4>Project management</h4>
-            <p>Good management help to keep and grow your customers, tapping into new opportunities and wide social media reach.
-            </p>
-          </div>
-        </div>
-
-
-        <div class="col-md-3">
-          <div class="card">
-            <h4>Value propositions and narrate </h4>
-            <p>We assure innovation & creativity from highly skilled consultants and affordability</p>
-          </div>
-        </div>
-
-
-        <div class="col-md-3">
-          <div class="card">
-            <h4>Channels through and narrate</h4>
-            <p>Harnes the power of social media & digital media, build a website as an online brochure</p>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card">
-            <h4>Human resources</h4>
-            <p>Recruitment requirements and avail labour laws</p>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card">
-            <h4>Events / Business processes</h4>
-            <p>Clear brief on output required , Brand recognition , work with franchises for prosperity</p>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card">
-            <h4>Customer Service</h4>
-            <p>Understand clients' industry segment and train staff on customer recognition</p>
           </div>
         </div>
 
@@ -95,41 +168,6 @@
   </div>
 
 
-  <div class="content" id="product2">
-    <div class="container">
-
-      <h3 class="section-heading">Brand strategy</h3>
-
-      <div class="row">
-
-        <div class="col-md-3">
-          <div class="card">
-            <p>Branding and visual identity are all around us, we will guide you into building a strong visual identity that will set you apart and help you make more thoughtful design decisions in your business.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-
-  <div class="content" id="product3">
-    <div class="container">
-
-      <h3 class="section-heading">Language translations</h3>
-
-      <div class="row">
-
-        <div class="col-md-3">
-          <div class="card">
-            <p>We offer fluent French and English languages.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
 
 
 </div>

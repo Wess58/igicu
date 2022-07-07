@@ -2,12 +2,14 @@
   background-color: #fff;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.09);
   padding-right: 100px;
-  height: 75px;
+  height: 65px;
   overflow: hidden;
 
   .navbar-brand {
-    height: 110px;
+    width: 250px;
+    height: auto;
     cursor: pointer;
+    object-fit: contain;
   }
 
   .nav-item {
@@ -15,24 +17,23 @@
   }
 
   .nav-link {
-    color: #fff;
+    color: #00a651;
     font-weight: 600;
     letter-spacing: 1.5px;
-    // font-family: 'Roboto', sans-serif!important;
     border-radius: 3px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding-bottom: 3px;
-    border-bottom: 3px solid #00a651;
+    border-bottom: 3px solid #fff;
 
 
     &:hover {
-      border-bottom: 3px solid #fff5;
+      border-bottom: 3px solid #00a651;
     }
   }
 }
 
 .active-link {
-  border-bottom: 3px solid #fff!important;
+  border-bottom: 3px solid #00a651!important;
 }
 
 @media (max-width: 770px) {
