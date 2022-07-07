@@ -32,7 +32,7 @@
         line-height: 60px;
 
         span {
-          color: #62A851;
+          color: #00a651;
         }
       }
 
@@ -43,12 +43,12 @@
         backdrop-filter:blur(3px);
 
         span {
-          color: #62A851;
+          color: #00a651;
         }
       }
 
       .btn-cta {
-        background-color: #62A851;
+        background-color: #00a651;
         color: #fff;
         letter-spacing: 1px;
         font-weight: 600;
@@ -81,15 +81,15 @@
   .products-section {
     padding: 50px 0;
     height: 600px;
-    background-image: linear-gradient(to bottom, #FCFCFC 50% , #62A851 50%);
+    background-image: linear-gradient(to bottom, #FCFCFC 50% , #00a651 50%);
 
     h2 {
       font-weight: 600;
-      color: #62A851;
+      color: #00a651;
       margin-bottom: 50px;
 
       span {
-        border-bottom: 3px solid #62A851;
+        border-bottom: 3px solid #00a651;
         border-radius: 3px;
       }
     }
@@ -120,7 +120,7 @@
       }
 
       .btn-view {
-        color: #62A851;
+        color: #00a651;
         // font-size: 0.9rem;
         padding-left: 0;
         text-align: left;
@@ -153,7 +153,7 @@
       margin-bottom: 50px;
 
       span {
-        color: #62A851;
+        color: #00a651;
       }
     }
 
@@ -185,7 +185,7 @@
       margin-bottom: 50px;
 
       span {
-        color: #62A851;
+        color: #00a651;
       }
     }
 
@@ -197,7 +197,7 @@
     }
 
     .green-bg {
-      background-color: #62A851;
+      background-color: #00a651;
 
       .pie-wrapper .label,
       .pie-wrapper .label .smaller {
@@ -217,18 +217,18 @@
 
       .pie-wrapper .label,
       .pie-wrapper .label .smaller {
-        color: #62A851;
+        color: #00a651;
       }
 
       p {
         text-align: center;
-        color: #62A851;
+        color: #00a651;
         font-weight: 600;
       }
     }
 
     .btn-cta {
-      background-color: #62A851;
+      background-color: #00a651;
       color: #fff;
       letter-spacing: 1px;
       font-weight: 600;
@@ -246,7 +246,7 @@
     .cta-image {
       height: 350px;
       margin-top: 150px;
-      filter: drop-shadow(0px 3px 40px #62A85144);
+      filter: drop-shadow(0px 3px 40px #00a65144);
     }
   }
 }
@@ -331,7 +331,7 @@
 }
 
 .pie-wrapper.progress-65 .pie .half-circle {
-  border-color: #62A851;
+  border-color: #00a651;
 }
 
 .pie-wrapper.progress-65 .pie .left-side {
@@ -384,7 +384,7 @@
     padding: 30px 20px !important;
     height: auto!important;
     border-bottom: 1px solid #f1f1f1;
-    background-image: linear-gradient(20deg, #FCFCFC 50% , #62A851 50%)!important;
+    background-image: linear-gradient(20deg, #FCFCFC 50% , #00a651 50%)!important;
 
     h2 {
       color: #f1f1f1!important;
@@ -426,7 +426,7 @@
       height: auto;
       margin-top: 0!important;
       margin-top: 150px;
-      filter: drop-shadow(0px 3px 40px #62A85144);
+      filter: drop-shadow(0px 3px 40px #00a65144);
     }
   }
 }
