@@ -1,7 +1,7 @@
 <div class="container-fluid home-page" [@fadeIn]>
 
 
-  <carousel [height]="500" [cellWidth]="'100%'"  [loop]="true" [arrowsTheme]="'dark'" class="landing-section">
+  <carousel [height]="500" [cellWidth]="'100%'" [loop]="true" [arrowsTheme]="'dark'" class="landing-section">
     <div class="carousel-cell">
       <div class="consultancy-section">
         <div class="container">
@@ -63,6 +63,47 @@
 
   </carousel>
 
+
+  <!-- PRODUCTS SUMMARY SECTION -->
+  <div class="products-section">
+    <div class="container">
+      <h2><span>What we do here</span></h2>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <h4>Communications consultancy</h4>
+            <p>Businesses often underestimate the power of a consistent narrative, we'll guide your business step by step into building a strong brand identity.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <h4>Customer service training</h4>
+            <p>Gain an understanding of your customers' industry segment and train your staff on customer satisfaction and recognition.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <h4>Event planning and management</h4>
+            <p>with a clear brief on the output required, there should be brand recognition whilst working within franchises for prosperity.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <h4>Language translations and tutoring</h4>
+            <p>Avail education through webinars, learning packages as well as translations.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   <!-- LANDING SECTION -->
 
 
@@ -85,53 +126,7 @@
     </div>
   </div>
 
-  <!-- PRODUCTS SUMMARY SECTION -->
-  <div class="products-section">
-    <div class="container">
-      <h2><span>What we do here</span></h2>
 
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <h4>Communications consultancy</h4>
-            <p>Get advice on strategic communications and marketing solutions
-              tailored to your requirements to boost your project from communication planning to media materials.
-            </p>
-
-            <button class="btn btn-view" [routerLink]="['/services']" [queryParams]="{ service: '01' }">learn more <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
-
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card">
-            <h4>Brand strategy</h4>
-            <p>Branding and visual identity are all around us,
-              we will guide you into building a strong visual identity that will set you apart and help you make more thoughtful design decisions in your business.</p>
-
-            <button class="btn btn-view" [routerLink]="['/services']" [queryParams]="{ service: '03' }">learn more <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
-
-
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <h4>Language translations</h4>
-            <p>We offer proffessional translators that are richly invested in a vast array of linguistics, to make it easier to interpret and render texts / speech accurately and quickly and spot errors</p>
-
-            <button class="btn btn-view" [routerLink]="['/services']" [queryParams]="{ service: '04' }">learn more <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
-
-            <!-- <ul>
-              <li>French</li>
-              <li>English</li>
-            </ul> -->
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
 
   <div class="call-to-action-section">
     <div class="container">
