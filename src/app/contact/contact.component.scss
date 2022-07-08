@@ -1,7 +1,7 @@
 .contact-page {
   .landing-section {
     padding-top: 15vh;
-    background-image: linear-gradient(to bottom , rgba(0,0,0,0.65) 60% , transparent), url("../../assets/images/image-three.jpg");
+    background-image: linear-gradient(to bottom , rgba(0,0,0,0.65) 60% , transparent), url("../../assets/images/contcat-us-bg.png");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -10,7 +10,7 @@
     background-position: center;
     // background-attachment: fixed;
     will-change: transform;
-    height: 450px;
+    height: 350px;
 
     h1 {
       font-weight: 600;
@@ -82,8 +82,8 @@
       input,
       textarea {
         border: 2px solid #3c4043;
-        border-radius: 8px;
-        padding: 25px 12px!important !important;
+        border-radius: 6px;
+        padding: 20px 12px!important;
         background-color: #FCFCFC;
       }
 
@@ -96,7 +96,7 @@
         margin-top: 15px;
         margin-bottom: 20px;
         border-radius: 8px;
-        padding: 14px!important !important;
+        padding: 14px!important;
       }
     }
 
@@ -130,6 +130,6 @@
 
   .content {
     background-color: #00a651;
-    padding: 40px 10px!important !important;
+    padding: 40px 10px!important;
   }
 }
