@@ -1,0 +1,100 @@
+.approach {
+  .landing-section {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: #f8f8f8;
+
+    .profile-holder {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 400px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        box-shadow: 10px 10px 0 0 rgba(0,0,0,0.09);
+      }
+    }
+
+    .content {
+      p {
+        font-weight: 600;
+        color: #5f6063;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .strategy-section {
+    border-top: 5px solid #00a651;
+    padding: 5vh 0;
+
+    h3 {
+      color: #00a651;
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-size: 2.6rem;
+    }
+
+    p {
+      font-weight: 600;
+      color: #5f6063;
+      line-height: 30px;
+    }
+
+    .btn-cta-call{
+      background-color: #00a651;
+      font-size: 1.1rem;
+      color:#fff;
+      font-weight: 600;
+      border-radius: 40px;
+      padding: 10px 30px;
+      text-transform: uppercase;
+    }
+
+    .illustration-holder {
+      img {
+        max-width: 100%;
+        height: 350px;
+      }
+    }
+
+    .card {
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 7px 7px 0 0 rgba(0,0,0,0.09);
+      background-color: #fff;
+      height: 94%;
+
+      .image-holder {
+        height: 180px;
+        text-align: center;
+
+        img {
+          height: 180px;
+          width: 80%;
+          margin: 0 auto;
+          object-fit: contain;
+        }
+      }
+
+      h4 {
+        color: #5f6063;
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+
+        span {
+          font-size: 0.9rem;
+        }
+      }
+
+      p {
+        color: #5f6063;
+        font-size: 0.9rem;
+        font-weight: normal;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { style, animate, transition, trigger } from '@angular/animations';
 
 
@@ -33,26 +33,43 @@ export class ProductsComponent implements OnInit {
       imgUrl: "assets/images/image-three.jpg"
     },
     {
+      imgUrl: "assets/images/event-rally.jpg"
+    },
+    {
       imgUrl: "assets/images/image-one.jpg"
     }
   ]
 
   constructor(
-    private activatedRoute: ActivatedRoute
-  ) { }
+    private activatedRoute: ActivatedRoute,
+    private router: Router
+  ) {
+
+    this.router.events.subscribe((val) => {
+      // see also
+      if (val instanceof NavigationEnd) {
+        this.ngOnInit();
+      }
+    });
+
+  }
 
   ngOnInit(): void {
-    window.scroll(0, 0);
+
 
     // console.log(this.activatedRoute.snapshot.queryParams);
-    // this.activatedRoute.queryParams.subscribe(params => {
-    //   // console.log(params);
-    //   this.route = params.service;
-    // });
-    //
-    // setTimeout(() => {
-    //   this.scrollToContent();
-    // }, 300);
+    this.activatedRoute.queryParams.subscribe(params => {
+      // console.log(params);
+      this.route = params.service;
+      if (!params.service) {
+        window.scroll(0, 0);
+
+      } else {
+        this.scrollToContent();
+      }
+
+    });
+
     this.activateFade = true;
 
     this.currentBackground = this.carouselImages[0];
@@ -65,7 +82,7 @@ export class ProductsComponent implements OnInit {
   setBackground(): any {
 
     this.currentImageIndex++;
-    this.currentImageIndex = this.currentImageIndex % this.carouselImages?.length;
+    this.currentImageIndex = this.currentImageIndex % this.carouselImages ?.length;
 
     this.currentBackground = null;
     setTimeout(() => {

@@ -19,7 +19,6 @@
     will-change: transform;
     height: 100%;
 
-
     .content {
       padding-top: 70px;
 
@@ -80,6 +79,7 @@
   }
 
   .products-section {
+    border-top: 5px solid #00a651;
     padding: 50px 0;
     height: 500px;
     background-image: linear-gradient(to bottom, #FCFCFC 50% , #00a651 50%);

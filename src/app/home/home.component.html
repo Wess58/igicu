@@ -1,7 +1,7 @@
 <div class="container-fluid home-page" [@fadeIn]>
 
 
-  <carousel [height]="500" [cellWidth]="'100%'" [loop]="true" [arrowsTheme]="'dark'" class="landing-section">
+  <carousel [height]="500" [autoplay]="true" [transitionTimingFunction]="'ease-out'" [cellWidth]="'100%'" [loop]="true" [arrowsTheme]="'dark'" class="landing-section">
     <div class="carousel-cell">
       <div class="consultancy-section">
         <div class="container">
@@ -74,6 +74,8 @@
           <div class="card">
             <h4>Communications consultancy</h4>
             <p>Businesses often underestimate the power of a consistent narrative, we'll guide your business step by step into building a strong brand identity.</p>
+            <button class="btn btn-view" [routerLink]="['/services']" [queryParams]="{ service: '02' }">learn more <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
+
           </div>
         </div>
 
@@ -81,6 +83,8 @@
           <div class="card">
             <h4>Customer service training</h4>
             <p>Gain an understanding of your customers' industry segment and train your staff on customer satisfaction and recognition.</p>
+            <button class="btn btn-view" [routerLink]="['/services']" [queryParams]="{ service: '02' }">learn more <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
+
           </div>
         </div>
 
@@ -88,14 +92,18 @@
           <div class="card">
             <h4>Event planning and management</h4>
             <p>with a clear brief on the output required, there should be brand recognition whilst working within franchises for prosperity.</p>
+            <button class="btn btn-view" [routerLink]="['/services']" [queryParams]="{ service: '02' }">learn more <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
+
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="card">
             <h4>Language translations and tutoring</h4>
-            <p>Avail education through webinars, learning packages as well as translations.
+            <p>We offer proffessional education through webinars, learning packages as well as translations.
             </p>
+            <button class="btn btn-view" [routerLink]="['/services']" [queryParams]="{ service: '02' }">learn more <span><i class="fas fa-arrow-circle-right ml-2"></i></span></button>
+
           </div>
 
         </div>

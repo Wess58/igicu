@@ -1,8 +1,5 @@
 <nav class="navbar navbar-expand-lg fixed-top">
   <img class="navbar-brand" [routerLink]="['/']" src="assets/images/logo-alt.svg" alt="logo">
-  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button> -->
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
@@ -10,25 +7,14 @@
         <a class="nav-link" [routerLink]="['/']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/our-approach']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Our Approach</a>
+        <a class="nav-link" [routerLink]="['/our-approach']" [ngClass]="{'active-link':router.url.includes('approach')}">Our Approach</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/services']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Services</a>
+        <a class="nav-link" [routerLink]="['/services']" [ngClass]="{'active-link':router.url.includes('service')}">Services</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/contact-us']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Contact Us</a>
+        <a class="nav-link" [routerLink]="['/contact-us']" [ngClass]="{'active-link':router.url.includes('contact')}">Contact Us</a>
       </li>
-      <!-- <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li> -->
     </ul>
   </div>
 </nav>
