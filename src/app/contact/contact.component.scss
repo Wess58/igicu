@@ -80,11 +80,17 @@
       }
 
       input,
-      textarea {
+      textarea,
+      select {
         border: 2px solid #3c4043;
         border-radius: 6px;
         padding: 20px 12px!important;
         background-color: #FCFCFC;
+        outline: none;
+      }
+      select{
+        padding: 0 12px!important;
+        height: 44px;
       }
 
       .btn-send {
@@ -109,6 +115,11 @@
     p {
       color: #FCFCFC;
       font-weight: 600;
+
+      a{
+        color: #FCFCFC;
+
+      }
     }
   }
 }
