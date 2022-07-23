@@ -101,7 +101,7 @@ export class ProductsComponent implements OnInit {
     let offsetPosition;
 
     if (this.route === '01') {
-      console.log('here');
+      // console.log('here');
 
       elementPosition = document.getElementById('product1')!.offsetTop;
       offsetPosition = elementPosition - headerOffset;
