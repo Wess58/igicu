@@ -61,13 +61,12 @@ export class ProductsComponent implements OnInit {
     this.activatedRoute.queryParams.subscribe(params => {
       // console.log(params);
       this.route = params.service;
-      if (!params.service) {
-        window.scroll(0, 0);
+      window.scroll(0, 0);
 
-      } else {
+      setTimeout(() => {
         this.scrollToContent();
-      }
 
+      }, 10);
     });
 
     this.activateFade = true;
