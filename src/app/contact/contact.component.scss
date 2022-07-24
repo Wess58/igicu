@@ -102,7 +102,7 @@
         margin-top: 15px;
         margin-bottom: 20px;
         border-radius: 8px;
-        padding: 14px!important;
+        padding: 9px!important;
       }
     }
 
@@ -112,13 +112,14 @@
       margin-bottom: 20px;
     }
 
-    p {
+    .contact-details {
       color: #FCFCFC;
       font-weight: 600;
-
-      a{
-        color: #FCFCFC;
-
+      display:block;
+      margin-bottom: 10px;
+      span{
+        width: 20px;
+        display: inline-block;
       }
     }
   }
