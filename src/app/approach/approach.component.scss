@@ -42,10 +42,10 @@
       line-height: 30px;
     }
 
-    .btn-cta-call{
+    .btn-cta-call {
       background-color: #00a651;
       font-size: 1.1rem;
-      color:#fff;
+      color: #fff;
       font-weight: 600;
       border-radius: 40px;
       padding: 10px 30px;
@@ -95,6 +95,13 @@
         font-size: 0.9rem;
         font-weight: normal;
       }
+    }
+  }
+}
+@media (max-width: 770px) {
+  .profile-holder {
+    img {
+      width: 90%!important;
     }
   }
 }

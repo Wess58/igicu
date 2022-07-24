@@ -1,9 +1,14 @@
 <nav class="navbar navbar-expand-lg fixed-top">
   <img class="navbar-brand" [routerLink]="['/']" src="assets/images/logo-alt.svg" alt="logo">
 
+  <button class="navbar-toggler" type="button" (click)="toggleMenu()" aria-expanded="false" aria-label="Toggle navigation">
+    <span *ngIf="!showMenu"><i class="fas fa-bars"></i></span>
+    <span *ngIf="showMenu"><i class="fas fa-times"></i></span>
+
+  </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" [routerLink]="['/']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
       </li>
       <li class="nav-item">
@@ -17,4 +22,21 @@
       </li>
     </ul>
   </div>
+
+  <div class="drop-down-menu" [ngClass]="{'show-menu':showMenu}" (click)="toggleMenu()">
+  <ul class="navbar-nav" *ngIf="showMenu" [@fadeIn]>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/our-approach']" [ngClass]="{'active-link':router.url.includes('approach')}">Our Approach</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/services']" [ngClass]="{'active-link':router.url.includes('service')}">Services</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/contact-us']" [ngClass]="{'active-link':router.url.includes('contact')}">Contact Us</a>
+    </li>
+  </ul>
+</div>
 </nav>
